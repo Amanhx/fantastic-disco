@@ -1,87 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Cinzel+Decorative&display=swap');
-
-body {
-    margin: 0;
-    font-family: 'Playfair Display', serif;
-    background: linear-gradient(135deg, #000000, #1a000a, #000);
-    color: #fff;
-    min-height: 100vh;
-    overflow-x: hidden;
-}
-
-.container {
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
-}
-
+/* Previous CSS + additions */
 .youtube-section {
     flex: 3;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
-    background: rgba(0,0,0,0.7);
 }
 
-.sidebar {
-    flex: 1;
-    background: linear-gradient(to bottom, #ff006e, #ff4d4d, #c71585);
+.subscribe-img {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 0 40px #ff1493;
+    margin-bottom: 20px;
+}
+
+.sub-text {
+    font-size: 1.2em;
+    color: #ff69b4;
+    margin-top: 10px;
+}
+
+.viral-sidebar {
+    flex: 1.2;
+    background: linear-gradient(to bottom, #c71585, #ff006e, #ff4d4d);
     padding: 20px;
     overflow-y: auto;
-    border-left: 4px solid #ff1493;
-}
-
-h1.glow {
-    font-family: 'Cinzel Decorative', cursive;
-    font-size: 2.8em;
-    text-shadow: 0 0 20px #ff69b4, 0 0 40px #ff1493;
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0% { text-shadow: 0 0 10px #ff69b4; }
-    50% { text-shadow: 0 0 40px #ff1493, 0 0 60px #c71585; }
-    100% { text-shadow: 0 0 10px #ff69b4; }
-}
-
-.card {
-    background: rgba(0,0,0,0.6);
-    border-radius: 15px;
-    margin: 15px 0;
-    padding: 10px;
-    cursor: pointer;
-    transition: all 0.4s;
-    box-shadow: 0 10px 30px rgba(255,20,147,0.3);
-}
-
-.card:hover {
-    transform: scale(1.18) rotate(3deg);
-    box-shadow: 0 40px 80px #ff1493;
 }
 
 .card img {
     width: 100%;
-    border-radius: 10px;
-}
-
-.neon-btn {
-    background: linear-gradient(45deg, #ff006e, #ff4d4d);
-    border: none;
-    color: white;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0 0 30px #ff1493;
-    transition: all 0.3s;
-}
-
-.neon-btn:hover {
-    box-shadow: 0 0 60px #ff69b4;
-    transform: scale(1.1);
-}
-
-/* Mobile responsive – sidebar bottom pe shift */
-@media (max-width: 768px) {
-    .container { flex-direction: column; }
-    .sidebar { border-left: none; border-top: 4px solid #ff1493; }
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid #ff1493;
 }
